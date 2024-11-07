@@ -15,6 +15,18 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className="w-12 h-12 md:w-16 md:h-16" />
       </motion.div>
 
+      {/* Navigation Links */}
+      <motion.div
+        className="hidden md:flex gap-6 text-lg text-white"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <a href="#home" className="hover:text-cyan-400 transition-colors">Home</a>
+        <a href="#about" className="hover:text-cyan-400 transition-colors">About</a>
+        <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
+      </motion.div>
+
       {/* Animated Social Icons */}
       <motion.div
         className="flex items-center gap-4 text-xl md:text-2xl m-4"
@@ -24,9 +36,9 @@ const Navbar = () => {
       >
         {/* Individual icon hover animation */}
         {[
-          { icon: FaLinkedin, link: "#" },
-          { icon: FaGithub, link: "#" },
-          { icon: FaTwitter, link: "#" },
+          { icon: FaLinkedin, link: "https://www.linkedin.com/in/jeya-pragash-163355266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+          { icon: FaGithub, link: "https://github.com/Jeyapragash1" },
+          { icon: FaTwitter, link: "https://x.com/JeyaPragash015" },
           { icon: FaInstagram, link: "#" },
         ].map(({ icon: Icon, link }, index) => (
           <motion.a

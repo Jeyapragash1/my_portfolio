@@ -51,7 +51,7 @@ export const PROJECTS = [
     image: project6,
     description:
       "This is my Portfolio Website.",
-    technologies: ["React", "Vite","CSS", "ESLint", "Babel","(via @vitejs/plugin-react)","SWC(via @vitejs/plugin-react-swc)"], 
+    technologies: ["React","HTML", "Vite","CSS", "ESLint", "Babel","(via @vitejs/plugin-react)","SWC(via @vitejs/plugin-react-swc)"], 
   },
 ];
 
